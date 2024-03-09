@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get SSL Certificate with Nginx and Certbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Get SSL Certificate with Nginx and Certbot</h1>
+        <h2>Efficient Dev Journey</h2>
+      </header>
+
+      <main>
+        <section>
+          <h2>Introduction</h2>
+          <p>
+            In this tutorial, we'll learn how to secure your website with an SSL
+            certificate using Nginx and Certbot. An SSL certificate ensures that
+            the data transmitted between your website and its visitors is
+            encrypted, providing a secure connection.
+          </p>
+        </section>
+
+        <section>
+          <h2>Prerequisites</h2>
+          <p>
+            Before we begin, make sure you have the following prerequisites:
+          </p>
+          <ul>
+            <li>A server with Nginx installed</li>
+            <li>A domain name pointing to your server's IP address</li>
+            <li>Root access to your server</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Step 1: Install Certbot</h2>
+          <p>
+            Certbot is a free and open-source software client for automatically
+            obtaining and renewing SSL certificates from Let's Encrypt. To
+            install Certbot on your server, follow these steps:
+          </p>
+          <p>sudo snap install --classic certbot</p>
+          <p>sudo ln -s /snap/bin/certbot /usr/bin/certbot</p>
+        </section>
+
+        <section>
+          <h2>Step 2: Obtain SSL Certificate</h2>
+          <p>
+            Once Certbot is installed, you can use it to obtain an SSL
+            certificate for your domain. Run the following command:
+          </p>
+          <p>sudo certbot certonly --nginx</p>
+        </section>
+
+        <section>
+          <h2>Step 4: Reload Nginx</h2>
+          <p>Finally, reload Nginx to apply the new configuration:</p>
+          <p>systemctl restart nginx</p>
+        </section>
+      </main>
+
+      <footer>&copy; 2024 Your YouTube Channel</footer>
+    </div>
+  </body>
+</html>
